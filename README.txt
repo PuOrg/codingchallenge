@@ -40,3 +40,37 @@ java -cp target/codingchallenge-1.0.0-SNAPSHOT.jar com.aconex.codingchallenge.Cl
 
 java -cp target/codingchallenge-1.0.0-SNAPSHOT.jar com.aconex.codingchallenge.Client -i <full_path_to_the_input_files_directory> -d <full_path_to_the_dictonary_file>
 The above will read all the input files from the directory and read the numbers. It will use the provided dictonary)
+
+Sample Output
+-------------
+
+D:\work\github\codingchallenge>java -cp target/codingchallenge-1.0.0-SNAPSHOT.jar com.aconex.codingchallenge.Client -i resources/input
+Jun 03, 2016 2:00:19 PM com.aconex.codingchallenge.Client main
+INFO: No valid dictionary found. Using default D:\work\github\codingchallenge\resources\dictionary\SimpleDictionary
+Jun 03, 2016 2:00:19 PM com.aconex.codingchallenge.Client main
+INFO: Reading numbers from file resources\input\file1
+Jun 03, 2016 2:00:19 PM com.aconex.codingchallenge.Client invoke
+INFO: Looking for conversions for the number 1-800-263464-242553643
+1-800-263464-242553643-> 1-800-CODING-CHALLENGE
+Jun 03, 2016 2:00:19 PM com.aconex.codingchallenge.Client invoke
+INFO: Looking for conversions for the number 1-800-3569377
+1-800-3569377-> 1-800-FLOWERS
+Jun 03, 2016 2:00:19 PM com.aconex.codingchallenge.Client invoke
+INFO: Looking for conversions for the number 2255.6388
+Jun 03, 2016 2:00:19 PM com.aconex.codingchallenge.internal.Converter convertToLetters
+WARNING: Cannot find a match for 22556388 as it has two adjecent numbers 638 which canot be transformed to letters
+Jun 03, 2016 2:00:19 PM com.aconex.codingchallenge.Client main
+INFO: Error occured for number 2255.6388
+Jun 03, 2016 2:00:19 PM com.aconex.codingchallenge.Client main
+INFO: Reading numbers from file resources\input\file2
+Jun 03, 2016 2:00:19 PM com.aconex.codingchallenge.Client invoke
+INFO: Looking for conversions for the number 2255.63
+2255.63-> CALL-ME
+2255.63-> CALL-OF
+2255.63-> BALL-ME
+2255.63-> BALL-OF
+Jun 03, 2016 2:00:20 PM com.aconex.codingchallenge.Client invoke
+INFO: Looking for conversions for the number 1-800
+1-800-> 1-800
+
+D:\work\github\codingchallenge>
