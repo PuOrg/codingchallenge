@@ -8,9 +8,52 @@ telephones. This makes the number easier to remember for customers.
 
 An example may be 1-800-FLOWERS
 
+Project Structure:
+-----------------
+    codingchallenge
+    │   pom.xml
+    │   README.txt
+    │
+    ├───resources
+    │   ├───dictionary
+    │   │       SimpleDictionary
+    │   │
+    │   └───input
+    │           file1
+    │           file2
+    │
+    └───src
+        ├───main
+        │   └───java
+        │       └───com
+        │           └───aconex
+        │               └───codingchallenge
+        │                   │   Client.java
+        │                   │
+        │                   ├───exception
+        │                   │       CHException.java
+        │                   │
+        │                   └───internal
+        │                           Constants.java
+        │                           Converter.java
+        │                           EnglishDictionary.java
+        │                           NumberEncoding.java
+        │                           NumberInputHandler.java
+        │                           PhoneNumber.java
+        │
+        └───test
+            └───java
+                └───com
+                    └───aconex
+                        └───codingchallenge
+                                ConverterTest.java
+                                EnglishDictionaryTest.java
+                                NumberInputHandlerTest.java
+                                PhoneNumberTest.java
+
 
 How to Build
---------
+------------
 
 Prerequisites: 
 Maven 3, JDK 1.7, Git
