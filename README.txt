@@ -76,13 +76,13 @@ Prerequisites: JRE 1.7
 
 Run either of the below commands
 java -cp target/codingchallenge-1.0.0-SNAPSHOT.jar com.aconex.codingchallenge.Client
-(The above will prompt the user to insert a number and it will use the default dictonary)
+(The above will prompt the user to insert a number and it will use the default dictoinary)
 
 java -cp target/codingchallenge-1.0.0-SNAPSHOT.jar com.aconex.codingchallenge.Client -i <full_path_to_the_input_files_directory>
-(The above will read all the input files from the directory and read the numbers. It will use the default dictonary)
+(The above will read all the input files from the directory and read the numbers. It will use the default dictoinary)
 
 java -cp target/codingchallenge-1.0.0-SNAPSHOT.jar com.aconex.codingchallenge.Client -i <full_path_to_the_input_files_directory> -d <full_path_to_the_dictonary_file>
-The above will read all the input files from the directory and read the numbers. It will use the provided dictonary)
+The above will read all the input files from the directory and read the numbers. It will use the provided dictoinary)
 
 Sample Output
 -------------
